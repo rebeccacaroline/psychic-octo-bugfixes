@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'simplecov', :require => false
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -35,6 +36,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'database_cleaner'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
