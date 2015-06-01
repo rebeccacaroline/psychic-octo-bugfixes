@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "this is a to read book list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccacaroline/psychic-octo-bugfixes.git"
+  },
+  "author": "Rebecca Holzschuh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rebeccacaroline/psychic-octo-bugfixes/issues"
+  },
+  "homepage": "https://github.com/rebeccacaroline/psychic-octo-bugfixes",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13",
+    "nodemon": "^1.3.7"
+  }
+}
