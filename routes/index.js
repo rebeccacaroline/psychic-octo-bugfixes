@@ -10,7 +10,13 @@ router.use(function (req, res, next){
 });
 
 router.get('/', function(req, res){
-  res.json({message: "this works!"});
+  Book.find(function(err, books){
+    var data = JSON.stringify(books);
+    res.render("index", {
+      appData: data
+    });
+  });
+  // res.json({message: "this works!"});
 });
 
 router.route('/books')
@@ -18,7 +24,7 @@ router.route('/books')
     var book = new Book({
       name: req.body.name,
       author: req.body.author
-    });
+    })
     book.save(function(err){
       if(err)
         res.send(err);
