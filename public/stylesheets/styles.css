@@ -1,3 +1,19 @@
 #initialContent {
   display: none;
 }
+
+body {
+  font-family: Lora;
+  color: white;
+  background: url('../images/library.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: gray;
+}

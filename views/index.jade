@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1 My Library
+
+  div#initialContent
+    = appData
+
+  div.app
+
+  script(id="newbooktemplate" type="text/x-handlebars")
+    form
+      input(name="name" placeholder="Title")
+      input(name="author" placeholder="Author")
+      input(type='submit' value="Add Book" id="newbookbutton")
+
+  script(id="booktemplate", type="text/x-handlebars")
+    <a href="#" class="name"> {{ name}}</a> by {{ author}}
+    button.delete
+      | Delete
+    button.read
+      | Read
+
+  script(id="detailedbooktemplate" type="text/x-handlebars")
+    <h2> {{name}} </h2>
+    <p> Written by {{author}} </p>
+    <p> Read? {{read}} </p>
+
+

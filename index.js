@@ -10,6 +10,8 @@ var Book = require('./app/models/book');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.set('view engine', 'jade');
+app.use(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 3000;
 
