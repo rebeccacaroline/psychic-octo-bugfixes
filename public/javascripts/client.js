@@ -111,6 +111,7 @@ var BookCollectionView = Backbone.View.extend({
   initialize: function(){
     // this.listenTo(this.collection, 'reset', this.render);
     this.collection.on('add', this.render);
+
     // this.listenTo(this.collection, 'sync', this.render);
     this.addNewBookButtonView = new AddNewBookButtonView();
     // this.collection.fetch();

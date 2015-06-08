@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var router = require('./routes/index.js')
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/library');
+mongoose.connect(process.env.MONGOLAB_URI);
 
 var Book = require('./app/models/book');
 
