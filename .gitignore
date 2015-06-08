@@ -6,6 +6,7 @@
 node_modules/*
 build/*
 npm-debug.log
+.env
 
 # Ignore bundler config.
 /.bundle
