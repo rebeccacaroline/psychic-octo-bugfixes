@@ -160,6 +160,7 @@ var AppRouter = Backbone.Router.extend({
   updateBook: function(id){
     var book = this.collection.get(id);
     book.set({read: true});
+    book.save();
     Backbone.history.navigate("/", {trigger: true});
   },
   deleteBook: function(id){
