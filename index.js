@@ -7,7 +7,6 @@ var router = require('./routes/index.js');
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_URI);
 
-
 var Book = require('./app/models/book');
 
 app.use(bodyParser.urlencoded({extended: true}));
