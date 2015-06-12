@@ -109,12 +109,9 @@ var AddNewBookButtonView = Backbone.View.extend({
 
 var BookCollectionView = Backbone.View.extend({
   initialize: function(){
-    // this.listenTo(this.collection, 'reset', this.render);
-    this.collection.on('add', this.render);
-
-    // this.listenTo(this.collection, 'sync', this.render);
     this.addNewBookButtonView = new AddNewBookButtonView();
-    // this.collection.fetch();
+    this.listenTo(this.collection, 'add', this.renderBook);
+    this.collection.fetch();
   },
   tagname: 'ul',
   className: 'books',
@@ -126,6 +123,12 @@ var BookCollectionView = Backbone.View.extend({
       this.$el.append(bookView.render().el);
     }, this);
     return this;
+  },
+  renderBook: function(book){
+    var bookview = new BookView({
+      model: book
+    });
+    this.$el.append(bookview.render().el)
   }
 });
 
