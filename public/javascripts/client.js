@@ -3,6 +3,6 @@ define(["backbone", "router"], function(Backbone, Router){
   App.start = function(){
     new Router();
     Backbone.History.start();
-  };
+  }
   return App;
 });
