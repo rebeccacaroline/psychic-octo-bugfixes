@@ -10,7 +10,7 @@ define(["backbone", "events", "jquery"], function(Backbone, Events, $){
     addBook: function(event){
       event.preventDefault();
       var url =  'book/new';
-      Event.trigger("router:navigate", url);
+      Events.trigger("router:navigate", url);
     }
   });
 

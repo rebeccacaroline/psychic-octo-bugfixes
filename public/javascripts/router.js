@@ -1,4 +1,4 @@
-define(["backbone", "events", "collections/book", "views/bookcollection", "views/detailedbook", "views/newbook"], function(Backbone, Events, BookCollection, BookCollectionView, NewBookView){
+define(["backbone", "events", "collections/book", "views/bookcollection", "views/detailedbook", "views/newbook"], function(Backbone, Events, BookCollection, BookCollectionView, DetailedBookView, NewBookView){
   var Router = Backbone.Router.extend({
     initialize: function(){
       var self = this;

@@ -1,4 +1,4 @@
-define(["backbone", "handlebars", "events", "jquery"], function(Backbone, Handlebars, Events, $){
+define(["backbone", "handlebars", "events", "jquery", "collections/book"], function(Backbone, Handlebars, Events, $, BookCollection){
   var NewBookView = Backbone.View.extend({
     initialize: function(){
       this.collection = new BookCollection();
