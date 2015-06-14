@@ -1,4 +1,4 @@
-define(["backbone", "views/book"], function(Backbone, BookView){
+define(["backbone", "views/book", 'views/addnewbookbutton'], function(Backbone, BookView, AddNewBookButtonView){
   var BookCollectionView = Backbone.View.extend({
     initialize: function(){
       this.addNewBookButtonView = new AddNewBookButtonView();
