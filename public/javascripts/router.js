@@ -4,7 +4,7 @@ define(["backbone", "events", "collections/book", "views/bookcollection", "views
       var self = this;
       this._setupCollection();
       Events.on("router:navigate", function(url){
-        self.navigate(url, {trigger:true})''
+        self.navigate(url, {trigger:true});
       });
     },
     routes: {
