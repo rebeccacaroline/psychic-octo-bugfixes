@@ -1,4 +1,5 @@
-$(function(){
-  window.router = new AppRouter();
-  Backbone.history.start();
+define(["client"], function(App){
+  $(function(){
+    App.start();
+  });
 });

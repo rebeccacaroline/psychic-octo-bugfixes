@@ -2,14 +2,9 @@ doctype html
 html
   head
     title To Read List
-    script(src='/javascripts/lib/underscore-min.js')
-    script(src='/javascripts/lib/jquery-1.11.3.min.js')
-    script(src='/javascripts/lib/backbone-min.js')
-    script(src='/javascripts/lib/handlebars.min.js')
-    script(src='/javascripts/client.js')
-    script(src='/javascripts/init.js')
     link(rel='stylesheet' href='/stylesheets/normalize.css' type='text/css')
     link(rel='stylesheet' href='/stylesheets/styles.css' type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css')
+    script(src='/javascripts/lib/require.min.js', data-main='/javascripts/require.config.js')
   body
     block content
