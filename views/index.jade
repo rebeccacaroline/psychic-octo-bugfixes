@@ -21,6 +21,11 @@ block content
     button.read
       | Read
 
+  script(id="readbooktemplate", type="text/x-handlebars")
+    <a href="#" class="name"> {{ name}}</a> by {{ author}}
+    button.delete
+      | Delete
+
   script(id="detailedbooktemplate" type="text/x-handlebars")
     <h2> {{name}} </h2>
     <p> Written by {{author}} </p>
