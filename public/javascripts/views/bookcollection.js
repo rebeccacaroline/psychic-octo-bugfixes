@@ -11,7 +11,6 @@ define(["backbone", "views/book", 'views/addnewbookbutton', 'views/readbook'], f
       this.$el.html("");
       this.$el.append(this.addNewBookButtonView.render().el);
       this.collection.each(function(book){
-        console.log(book.attributes.read);
         if (book.attributes.read === false){
           var bookView = new BookView({model: book});
         } else {

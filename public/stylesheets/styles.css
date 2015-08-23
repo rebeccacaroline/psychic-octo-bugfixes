@@ -4,18 +4,58 @@
 
 body {
   font-family: Lora;
-  color: white;
+  color: #FFFFF5;
   background: url('../images/library.jpg') no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  webkit-display:flex;
+  align-items: center;
+  webkit-align-items:center;
+}
+
+h1 {
+  margin-left: 2em;
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: #FFFFF5;
+  text-decoration: underline;
 }
 
 button {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #FFFFF5;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+button:hover, button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.app {
+  margin: auto;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-size: 1.15em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.addBook {
+  background-color: #fff;
+  color: #000;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.addBook:hover, .addBook:active {
+  background-color: #E3E3E3;
+  color:#000;
+  border: 1px solid #E3E3E3;
 }
 
 .typing {
@@ -25,3 +65,8 @@ button {
 #newbookbutton {
   background-color: gray;
 }
+
+
+/*.readnow {
+  margin-left: 75%;
+}*/

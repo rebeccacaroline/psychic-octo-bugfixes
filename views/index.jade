@@ -15,16 +15,19 @@ block content
       input(type='submit' value="Add Book" id="newbookbutton")
 
   script(id="booktemplate", type="text/x-handlebars")
-    <a href="#" class="name"> {{ name}}</a> by {{ author}}
-    button.delete
-      | Delete
-    button.read
-      | Read
+    div.notyetread
+      <a href="#" class="name"> {{ name}}</a> by {{ author}}
+      button.delete
+        | Delete
+      button.read
+        | Read
+
 
   script(id="readbooktemplate", type="text/x-handlebars")
-    <a href="#" class="name"> {{ name}}</a> by {{ author}}
-    button.delete
-      | Delete
+    div.readnow
+      <a href="#" class="name"> {{ name}}</a> by {{ author}}
+      button.delete
+        | Delete
 
   script(id="detailedbooktemplate" type="text/x-handlebars")
     <h2> {{name}} </h2>
